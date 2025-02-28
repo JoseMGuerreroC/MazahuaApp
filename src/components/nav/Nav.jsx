@@ -8,10 +8,10 @@ function Nav() {
 
   function openNav() {
     if (isOpened) {
-      logo.current.src = '/mazahua_logo.webp';
+      logo.current.src = "/mazahua_logo.png";
       setOpened(false);
     } else {
-        logo.current.src = '/x_logo.webp';
+      logo.current.src = "/x_logo.webp";
       setOpened(true);
     }
   }
@@ -25,18 +25,20 @@ function Nav() {
         <div onClick={openNav} className="navMenu">
           <img
             ref={logo}
-            src="/mazahua_logo.webp"
+            src="/mazahua_logo.png"
             alt="Logo de Mazahua, una letra 'M' de color negro"
           />
         </div>
         <Link
           to="/inicio"
+          onClick={openNav}
           className={`navMenuOption option-1 ${isOpened ? "opened" : ""}`}
         >
           <i className="fa-solid fa-house"></i>
           <p>Inicio</p>
         </Link>
         <Link
+          onClick={openNav}
           to="/menu"
           className={`navMenuOption option-2 ${isOpened ? "opened" : ""}`}
         >
@@ -44,6 +46,7 @@ function Nav() {
           <p>Menú</p>
         </Link>
         <Link
+          onClick={openNav}
           to="/historia"
           className={`navMenuOption option-3 ${isOpened ? "opened" : ""}`}
         >
@@ -51,6 +54,7 @@ function Nav() {
           <p>Historia</p>
         </Link>
         <Link
+          onClick={openNav}
           to=""
           className={`navMenuOption option-4 ${isOpened ? "opened" : ""}`}
         >

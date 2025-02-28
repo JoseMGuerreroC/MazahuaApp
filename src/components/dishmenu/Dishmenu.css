@@ -1,0 +1,40 @@
+.menuCont{
+    text-align: center;
+    width: 100%;
+    height: auto;
+
+}
+
+.menuCont h2{
+    color: var(--crail);
+    font-size: 40px;
+    margin: 10px 0px;
+    font-family: var(--titlefont);
+}
+
+.menuSub{
+    width: 100%;
+    height: 60px;
+    border: 1px solid var(--crail);
+    background: #fff;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-left: 20px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.menuSub img{
+    width: 70px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.menuSub p{
+    color: var(--crail);
+    font-size: 30px;
+    font-family: var(--titlefont);
+    transform: translateY(2px);
+}

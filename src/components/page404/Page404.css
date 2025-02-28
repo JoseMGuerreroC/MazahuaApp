@@ -1,0 +1,32 @@
+.section404{
+    width: 100%;
+    text-align: center;
+    color: var(--crail);
+}
+
+.section404 h2{
+    margin: 20px 0 0 0;
+    font-size: 100px;
+    font-family: var(--titlefont);
+    transform: translateX(-10px);
+
+}
+
+.section404 p{
+    margin: 5px 0;
+    font-size: 20px;
+    font-family: var(--textfont);
+}
+
+.section404 a{
+    margin: 5px 0;
+    font-size: 30px;
+    color: var(--crail);
+    font-family: var(--titlefont);
+}
+
+.section404 .error404{
+    font-size: 100px;
+    font-family: var(--titlefont);
+    transform: translateY(-30px);
+}
